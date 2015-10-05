@@ -46,8 +46,6 @@ public class Draw2D extends View {
         mPaint.setAntiAlias(true);
         mPaint.setTextSize(32);
         canvas.drawText(getResources().getString(R.string.grass_for_cats),30,648,mPaint);
-
-
         //Text angle
         int x=510;
         int y=190;
@@ -55,6 +53,7 @@ public class Draw2D extends View {
         mPaint.setTextSize(27);
         String str2rotate=getResources().getString(R.string.sun_beam);
 
+        //
         //Create the bounding rectangle for italic text
         //Rotate the canvas in the middle of text
         canvas.rotate(-45,x,y);
