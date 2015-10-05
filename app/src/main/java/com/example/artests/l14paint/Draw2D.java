@@ -47,6 +47,7 @@ public class Draw2D extends View {
         mPaint.setTextSize(32);
         canvas.drawText(getResources().getString(R.string.grass_for_cats),30,648,mPaint);
 
+
         //Text angle
         int x=510;
         int y=190;
