@@ -1,0 +1,14 @@
+<% if session[:items].length > 3 %>
+	<p>Holy long list, Batman</p>
+<% end %>
+
+<ul>
+	<% @items.each do |item| %>
+	<li><%= item %></li>
+	<% end %>
+</ul>
+
+<%= form_tag action: "index" do %>
+	<%= text_field_tag 'item' %>
+	<%= submit_tag "Enter item" %>
+<% end %>
